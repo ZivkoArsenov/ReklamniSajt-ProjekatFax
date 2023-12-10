@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.okvir{ 
+    margin: auto;
+}
+
+/* ----- ZAGLAVLJE POCETAK ----- */
+.zaglavlje{
+    background: white;
+    color: #fff;
+}
+
+.zaglavlje i {
+    color: black;
+}
+.slika {
+     clear: left;
+}
+
+.kontaktlinija {
+    height: 30px;
+    background-color: #333;
+    
+}
+.kontaktlinija i{
+    padding-left: 50px;
+    padding-top: 10px;
+    color: red;
+    font-size: 12px;
+}
+.kontaktlinija span {
+    color: white;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.menilinija {
+    max-width: 90%;
+    margin: auto;
+}
+.menilinija img {
+    height: 80px;
+    float: left;
+}
+.meni{
+    float: right;
+    line-height: 80px;
+}
+.meni a{
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.prikazidugme,.sakridugme{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.prikazidugme{
+    float: right;
+}
+.prikazidugme i{
+    line-height: 80px;
+}
+.meni a:hover,
+.prikazidugme:hover,
+.sakridugme:hover{
+    color: #3498db;
+}
+
+#menibox{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+}
+
+
+/* ----- ZAGLAVLJE KRAJ ----- */
+
+/* ----- SADRZAJ POCETAK ----- */
+.sadrzaj{
+    max-width: 1200px;
+    margin: auto;
+}
+.sadrzaj h1 {
+    color: #3a3d42;
+}
+.text {
+    padding: 2% 5%;
+    background-color: white;
+}
+.text h1{
+    padding: 4% 0;
+    text-align: center;
+    font-size: 2.4rem;
+}
+.text p {
+    color: #737373;
+    line-height: 1.8;
+}
+.saradnici {
+    display: flex;
+}
+.saradnici > div {
+    margin: auto;
+    width: 25%;
+}
+.saradnici div > img {
+   width: 100%;
+}
+
+
+/* ----- SADRZAJ KRAJ ----- */
+
+
+/* ----- FOOTER POCETAK ----- */
+
+.footer {
+    background-color: #333;
+    color: #b4b3c9;
+    font-size: 15px;
+}
+.footergore{
+    display: flex;  
+}
+
+.footergore > div{
+    line-height: 22px;
+    padding-top: 40px;
+    padding-left: 10%;
+    height: 110px;
+    width: 33%;
+}
+.footergore h3 {
+    color: white;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.footerdole {
+    height: 40px;
+}
+.footerdole hr{
+    width: 92%;
+    margin: auto;
+    border: .5px solid red;
+}
+.footerdole > p {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 11px;
+}
+.kopi { 
+    padding-left: 5%;
+    float: left;
+}
+.napravio {
+    padding-right: 5%;
+    float: right;
+}
+.napravio span{
+    color: red;
+}
+/* ----- FOOTER KRAJ ----- */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .prikazidugme,.sakridugme{
+    display: block;
+    }
+    .zaglavlje{
+      
+    }
+    .meni{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: 100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+    }
+    .meni a{
+    display: block;
+    padding: 20px;
+    color: white;
+    }
+    
+    .sakridugme i {
+        color: white;
+    }
+    .sakridugme{
+    position: absolute;
+    top: 54px;
+    right: 37px;
+    }
+    #menibox:checked ~ .meni{
+    right: 0;
+    }
+
+    .saradnici {
+    flex-wrap: wrap;
+    }
+    .saradnici > div{
+        width: 50%;
+        margin: auto;
+        
+    }
+    .saradnici div > img {
+        max-width: 150px;
+        padding-left: 20%;
+    }
+   
+    .footergore {
+        flex-direction: column;
+        padding-left: 20%;
+    }  
+    
+}
