@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Allow: /
+
+Sitemap: https://zivkoarsenov.github.io/ReklamniSajt-ProjekatFax/sitemap.xml
